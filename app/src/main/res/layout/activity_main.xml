@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+   <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/reload_anime_list"
+       >
+      <RelativeLayout
+
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:context=".view.MainActivity">
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:layout_margin="5dp"
+             android:id="@+id/anime_list_recycler"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             />
+
+      </RelativeLayout>
+   </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</layout>
+
